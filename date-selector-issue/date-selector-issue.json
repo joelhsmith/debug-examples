@@ -1,9 +1,9 @@
 {
   "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3562.0 Safari/537.36",
   "lighthouseVersion": "3.0.3",
-  "fetchTime": "2018-09-26T15:00:11.650Z",
-  "requestedUrl": "https://joelhsmith.github.io/debug-examples/date-selector-issue.html",
-  "finalUrl": "https://joelhsmith.github.io/debug-examples/date-selector-issue.html",
+  "fetchTime": "2018-09-26T15:16:14.417Z",
+  "requestedUrl": "https://joelhsmith.github.io/debug-examples/date-selector-issue/date-selector-issue.html",
+  "finalUrl": "https://joelhsmith.github.io/debug-examples/date-selector-issue/date-selector-issue.html",
   "runWarnings": [],
   "audits": {
     "accesskeys": {
@@ -741,6 +741,6 @@
     }
   },
   "timing": {
-    "total": 46228
+    "total": 46145
   }
 }
