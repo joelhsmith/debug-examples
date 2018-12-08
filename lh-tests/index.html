@@ -1,10 +1,13 @@
-<!DOCTYPE html>
-<html lang='en'>
+<html>
 <head>
 <title>Lighthouse Tester</title>
     <style>
         .date-display-single {
-            color: #ff847d;
+            color: #d7d7d7;
+        }
+        a {
+            color: #a3c1df;
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -43,11 +46,6 @@
     <h4>Image with empty alt attribute</h4>
     <img alt src="https://placekitten.com/g/200/300"/>
     <hr>
-    <h4>Aria fail</h4>
-    <div role="tab">Aria role tab 1</div>
-    <div role="tab">Aria role tab 2</div>
-    <div role="tabpanel">Panel text 1</div>
-    <div role="tabpanel">Panel text 2</div>
     <h4>Good ordered list</h4>
     <p>Best animals</p>
     <ol>
@@ -65,7 +63,16 @@
         <li>Ipsem</li>
         <div>a stray div in the OL</div>
     </ol>
-
-
+    <h4>Aria fails</h4>
+    <div role="tab">Aria role tab 1</div>
+    <div role="tab">Aria role tab 2</div>
+    <div role="tabpanel">Panel text 1</div>
+    <div role="tabpanel">Panel text 2</div>
+    <div id="imma-dupe"role="foobar">
+        Not a role
+    </div>
+    <div id="imma-dupe" role="footer">
+        Footer fail
+    </div>
 </body>
 </html>
