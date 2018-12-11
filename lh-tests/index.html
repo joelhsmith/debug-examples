@@ -1,6 +1,5 @@
 <html>
 <head>
-<title>Lighthouse Tester</title>
     <style>
         .date-display-single {
             color: #d7d7d7;
@@ -14,6 +13,9 @@
 <body>
     <h1>Page for testing Lighthouse related projects</h1>
     <p>Terrible examples of accessiblity failures.</p>
+    <script>
+        document.write("Hello World!");
+    </script>
     <h4>Lousy search form</h4>
     <input placeholder='search'/><input type="button" value="go"/>
     <hr>
@@ -30,13 +32,13 @@
         <p>Drupal websites use these properties on almost every date. Learn why dogs are also cool.</p>
     </div>
     <hr>
-    <h4>Bad link text</h4>
+    <h4 id="dupid">Bad link text</h4>
     <p>You should click <a href="https://google.com">here</a></p>
-    <p>You should <a href="https://bing.com">read more</a></p>
-    <p>You should <a href="https://example.com">read more</a></p>
-    <p>You should <a href="https://yahoo.com">read more</a></p>
-    <p>You should <a href="https://cnn.com">read more</a></p>
-    <p>You should <a href="https://msnbc.com">read more</a></p>
+    <p>You should <a href="https://bing.com">more</a></p>
+    <p>You should <a href="https://example.com">more</a></p>
+    <p>You should <a href="https://yahoo.com">more</a></p>
+    <p>You should <a href="https://cnn.com">learn more</a></p>
+    <p>You should <a href="https://msnbc.com">learn more</a></p>
     <p>You should <a href="https://example.com">learn more</a></p>
     <hr>
     <h4>Image missing Alt attribute</h4>
@@ -54,7 +56,7 @@
         <li>Birds</li>
         <li>Fish</li>
     </ol>
-    <h4>Bad unordered list</h4>
+    <h4 id="dupid">Bad unordered list</h4>
     <p>Words that mean nothing</p>
     <ol>
         <li>Foo</li>
@@ -62,5 +64,9 @@
         <li>Lorem</li>
         <li>Ipsem</li>
     </ol>
+    <li>foo list item not in parent ol or ul element</li>
+    <script>
+        document.write("I am causing a console error on purpose"
+    </script>
 </body>
 </html>
