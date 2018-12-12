@@ -2,10 +2,10 @@
 <head>
     <style>
         .date-display-single {
-            color: #d7d7d7;
+            color: black;
         }
         a {
-            color: #a3c1df;
+            color: darkblue;
             text-decoration: underline;
         }
     </style>
@@ -13,11 +13,11 @@
 <body>
     <h1>Page for testing Lighthouse related projects</h1>
     <p>Terrible examples of accessiblity failures.</p>
-    <script>
-        document.write("Hello World!");
-    </script>
-    <h4>Lousy search form</h4>
-    <input placeholder='search'/><input type="button" value="go"/>
+    <h4>Search form</h4>
+    <form>
+        <label for="search"Search></label>
+        <input id="search" placeholder='search'/><input type="button" value="Search"/>
+    </form>
     <hr>
     <h4>Log contrast with weird selector</h4>
     <div class="event">
@@ -64,9 +64,5 @@
         <li>Lorem</li>
         <li>Ipsem</li>
     </ol>
-    <li>foo list item not in parent ol or ul element</li>
-    <script>
-        document.write("I am causing a console error on purpose"
-    </script>
 </body>
 </html>
