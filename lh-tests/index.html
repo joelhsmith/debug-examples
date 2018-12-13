@@ -1,12 +1,11 @@
 <html>
 <head>
-    <title>lighthouse trigger fails</title>
     <style>
         .date-display-single {
-            color: black;
+            color: #d7d7d7;
         }
         a {
-            color: darkblue;
+            color: #a3c1df;
             text-decoration: underline;
         }
     </style>
@@ -14,11 +13,11 @@
 <body>
     <h1>Page for testing Lighthouse related projects</h1>
     <p>Terrible examples of accessiblity failures.</p>
-    <h4>Search form</h4>
-    <form>
-        <label for="search"Search></label>
-        <input id="search" placeholder='search'/><input type="button" value="Search"/>
-    </form>
+    <script>
+        document.write("Hello World!");
+    </script>
+    <h4>Lousy search form</h4>
+    <input placeholder='search'/><input type="button" value="go"/>
     <hr>
     <h4>Log contrast with weird selector</h4>
     <div class="event">
@@ -33,17 +32,21 @@
         <p>Drupal websites use these properties on almost every date. Learn why dogs are also cool.</p>
     </div>
     <hr>
-    <h4 id="dupid">Bad link text</h4>
+    <h4>Bad link text</h4>
     <p>You should click <a href="https://google.com">here</a></p>
-    <p>You should <a href="https://bing.com">more</a></p>
-    <p>You should <a href="https://example.com">more</a></p>
-    <p>You should <a href="https://yahoo.com">more</a></p>
-    <p>You should <a href="https://cnn.com">learn more</a></p>
-    <p>You should <a href="https://msnbc.com">learn more</a></p>
+    <p>You should <a href="https://bing.com">learn more</a></p>
+    <p>You should <a href="https://example.com">learn more</a></p>
+    <p>You should <a href="https://yahoo.com">learn more</a></p>
+    <p>You should <a href="https://cnn.com">read more</a></p>
+    <p>You should <a href="https://msnbc.com">read more</a></p>
     <p>You should <a href="https://example.com">learn more</a></p>
     <hr>
     <h4>Image missing Alt attribute</h4>
-    <img alt="cat" src="https://placekitten.com/g/300/100"/>
+    <img src="https://placekitten.com/g/300/100"/>
+    <h4>Image with bad alt attribute value</h4>
+    <img alt="DCIM_09789" src="https://placekitten.com/g/300/300"/>
+    <h4>Image with empty alt attribute</h4>
+    <img alt src="https://placekitten.com/g/200/300"/>
     <hr>
     <h4>Good ordered list</h4>
     <p>Best animals</p>
@@ -53,7 +56,7 @@
         <li>Birds</li>
         <li>Fish</li>
     </ol>
-    <h4 id="dupid">Bad unordered list</h4>
+    <h4>Bad unordered list</h4>
     <p>Words that mean nothing</p>
     <ol>
         <li>Foo</li>
@@ -61,5 +64,9 @@
         <li>Lorem</li>
         <li>Ipsem</li>
     </ol>
+    <li></li>
+    <script>
+        document.write("I am causing a console error on purpose"
+    </script>
 </body>
 </html>
