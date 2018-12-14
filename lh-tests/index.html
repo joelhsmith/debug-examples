@@ -1,5 +1,7 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <title>LH example fails</title>
     <style>
         .date-display-single {
             color: darkolivegreen;
@@ -13,8 +15,11 @@
 <body>
     <h1>Page for testing Lighthouse related projects</h1>
     <p>Terrible examples of accessiblity failures.</p>
-    <h4>Lousy search form</h4>
-    <input placeholder='search'/><input type="button" value="go"/>
+    <h4>search form</h4>
+    <form>
+        <label for="search">Search</label>
+        <input id="search" placeholder="search"/><input type="button" value="go"/>
+    </form>
     <hr>
     <h4>Log contrast with weird selector</h4>
     <div class="event">
@@ -57,6 +62,5 @@
         <li>Lorem</li>
         <li>Ipsem</li>
     </ol>
-    <li></li>
 </body>
 </html>
