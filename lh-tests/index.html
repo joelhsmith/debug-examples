@@ -1,12 +1,11 @@
-<!DOCTYPE html>
 <html>
 <head>
     <style>
         .date-display-single {
-            color: darkmagenta;
+            color: #eee;
         }
         a {
-            color: darkred;
+            color: #ddd;
             text-decoration: underline;
         }
     </style>
@@ -14,10 +13,8 @@
 <body>
     <h1>Page for testing Lighthouse related projects</h1>
     <p>Terrible examples of accessiblity failures.</p>
-    <h4>search form</h4>
-    <form>
-        <input id="search" placeholder="search"/><input type="button" value="go"/>
-    </form>
+    <h4>Lousy search form</h4>
+    <input placeholder='search'/><input type="button" value="go"/>
     <hr>
     <h4>Log contrast with weird selector</h4>
     <div class="event">
@@ -59,6 +56,12 @@
         <li>Bar</li>
         <li>Lorem</li>
         <li>Ipsem</li>
+        <div>this div should not be here.</div>
     </ol>
+    <li></li>
+    <p>Unclosed P tag
+    <script>
+        document.write("I am causing a console error on purpose"
+    </script>
 </body>
 </html>
