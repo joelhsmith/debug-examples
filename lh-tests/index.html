@@ -5,7 +5,7 @@
             color: #000;
         }
         a {
-            color: #eee;
+            color: blue;
             text-decoration: underline;
         }
     </style>
@@ -13,8 +13,11 @@
 <body>
     <h2>Page for testing Lighthouse related projects</h2>
     <p>Terrible examples of accessiblity failures.</p>
-    <h1>Lousy search form</h1>
-    <input placeholder='search'/><input type="button" value="go"/>
+    <h3>Lousy search form</h3>
+    <form>
+        <label for="search">Search</label>
+        <input id="search" placeholder='search'/><input type="button" value="Search"/>
+    </form>
     <hr>
     <h4>Log contrast with weird selector</h4>
     <div class="event">
@@ -57,6 +60,5 @@
         <li>Lorem</li>
         <li>Ipsem</li>
     </ol>
-    <script>foo</script>
 </body>
 </html>
