@@ -12,6 +12,17 @@
             color: #000;
         }
     </style>
+    
+    <script>
+    const setBg = () => {
+      const randomColor = Math.floor(Math.random()*16777215).toString(16);
+      document.body.style.backgroundColor = "#" + randomColor;
+      color.innerHTML = "#" + randomColor;
+    }
+    </script>
+
+genNew.addEventListener("click", setBg);
+setBg();
 </head>
 <body>
     <h2>Page for testing Lighthouse related projects</h2>
