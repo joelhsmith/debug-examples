@@ -76,5 +76,24 @@ setBg();
         <li>Ipsem</li>
     </ol>
 </div>
+    
+<div id="shared-faq">Loading shared faq...</div>
+
+
+<!--
+Include this script tag in every page footer.
+
+This way, users only need to add the <div id="shared-faq"></div> to display the content.
+-->
+<script>
+  // If the shared-faq div exists, load the content.
+  const faqDiv = document.getElementById('shared-faq');
+  if (faqDiv !== undefined) {
+    getRemoteText('https://gitlab.oit.duke.edu/th140/shared-content-test/-/raw/master/faq.html?inline=false', function(response) {
+      faqDiv.innerHTML = response;
+    })
+  }
+</script>
+
 </body>
 </html>
