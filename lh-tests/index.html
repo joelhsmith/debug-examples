@@ -1,7 +1,7 @@
 <html>
 <head>
-<!-- <title>Title of page</title> -->
-<!-- <meta name="description">Junk website to trigger Lighthouse alerts"</meta> -->
+<title>Title of page</title>
+<meta name="description">Junk website to trigger Lighthouse alerts"</meta>
     <style>
         .date-display-single {
             color: #222;
@@ -17,7 +17,10 @@
 
 </head>
 <body>
+    <header>
     <h2>Page for testing Lighthouse-related projects</h2>
+    </header>
+    <main>
     <p>Terrible examples of accessibility failures.</p>
     <h6>Lousy search form</h6>
     <form>         
@@ -25,7 +28,7 @@
         <input id="search"/><input type="button" value="Search"/>
     </form>
     <hr>
-    <h4 role="heading" aria-level="2">Log contrast with weird selector</h4>
+    <h4 role="heading" aria-level="2">Low contrast with weird selector</h4>
     <div class="event">
         <h2>I love cats</h2>
         <span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2018-09-26T15:30:00-04:00">Wednesday, September 26</span>
@@ -76,6 +79,6 @@
     
     Unclosed DIV
 
-
+</main>
 </body>
 </html>
